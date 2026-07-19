@@ -767,3 +767,91 @@ img {
   border-radius: var(--radius-full);
   border: 1px solid rgba(255, 107, 53, 0.1);
 }
+
+/* ================================================================
+   EXPERIENCE
+   ================================================================ */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 3px;
+  height: 100%;
+  background: var(--gradient-main);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12);
+  z-index: 1;
+}
+
+.timeline-content {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+}
+
+.timeline-content:hover {
+  border-color: rgba(255, 107, 53, 0.15);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  background: rgba(255, 107, 53, 0.1);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-company {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
